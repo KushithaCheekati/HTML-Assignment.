@@ -40,6 +40,19 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .schedule-table th {
+            background-color: #3498db;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -74,20 +87,38 @@
             <li>Artificial Intelligence</li>
         </ul>
 
-        <h3>Table</h3>
-        <table border="1">
-            <tr>
-                <th>Menu</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Dosa</td>
-                <td>100$</td>
-            </tr>
-            <tr>
-                <td>Idli</td>
-                <td>50$</td>
-            </tr>
+        <h2>MY Class Schedule (Table)</h2>
+
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>DAY</th>
+                    <th>Time</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Monday</strong></td>
+                    <td>5:50 pm - 8:10 pm</td>
+                    <td>Devpmt of Web based Solutions</td>
+                </tr>
+                <tr>
+                    <td><strong>Tuesday</strong></td>
+                    <td>2:30 pm - 5:00 pm</td>
+                    <td>Machine Learning</td>
+                </tr>
+                <tr>
+                    <td><strong>Tuesday</strong></td>
+                    <td>5:30 pm - 8:10 pm</td>
+                    <td>ITSM</td>
+                </tr>
+                <tr>
+                    <td><strong>Thursday</strong></td>
+                    <td>2:30 pm - 5:10 pm</td>
+                    <td>Info Priv, Security, Continuit</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
